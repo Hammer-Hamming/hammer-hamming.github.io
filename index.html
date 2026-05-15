@@ -2,430 +2,508 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
 
-<link rel="stylesheet" href="/css/main.css">
+  <title id="page-title">NeuroAI · Personal Page</title>
+  <meta name="description" content="PhD researcher working at the interface of artificial intelligence and systems neuroscience, with a focus on foundation models for neural encoding, biologically constrained architectures, and in-silico circuit discovery in mouse visual cortex.">
 
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="NeuroAI · Personal Page">
+  <meta property="og:description" content="PhD researcher at the interface of artificial intelligence and systems neuroscience.">
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hammer-Hamming&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hammer-Hamming&#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Hammer-Hamming">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
-  <title>Hammer-Hamming's Blog</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+<body>
+  <main class="container">
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hammer-Hamming's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
+    <!-- ============================================================
+         HEADER  — values are injected from /personal/info.js
+         ============================================================ -->
+    <header class="header">
+      <div class="intro">
+        <h1>
+          <span data-personal="name_en">&lt;YOUR NAME (English)&gt;</span><span class="name-cn" data-personal="name_cn">&lt;中文名&gt;</span>
+        </h1>
+        <p class="role"        data-personal="role">PhD Student in Computational Neuroscience</p>
+        <p class="affiliation" data-personal="affiliation">&lt;Department / Lab, University&gt;</p>
+        <p class="advisor">Advised by <span data-personal="advisor">&lt;Advisor Name&gt;</span></p>
+        <p class="contact">
+          <a data-personal="email" data-personal-href="email" href="mailto:placeholder@example.com">placeholder@example.com</a>
+        </p>
+      </div>
     </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section class="about">
+      <p>
+        Hi~ I am a PhD student in computational neuroscience working at the interface of
+        <strong>artificial intelligence and systems neuroscience</strong>. My research develops
+        large-scale neural encoding models for the <em>mouse visual cortex</em>, with an emphasis
+        on biologically constrained architectures that can serve not only as predictors of
+        population activity, but also as computational substrates for circuit-level analysis.
+      </p>
+      <p>
+        A central motivation of my work is the reciprocal exchange between AI and neuroscience:
+        scalable deep models provide increasingly expressive tools for modeling neural systems,
+        while biological circuits offer structural priors and learning principles that can inform
+        more robust and interpretable AI. In the long term, I aim to build foundation-scale models
+        that function as experimentally grounded digital twins of cortex and support in-silico
+        dissection of neural computation.
+      </p>
+    </section>
 
+    <!-- ============================================================
+         RESEARCH — three themes, big-picture only
+         ============================================================ -->
+    <h2>Research Interests</h2>
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+    <div class="theme">
+      <div class="theme-figure" aria-hidden="true">
+        <!-- Theme 1: large-scale neural encoding from stimulus and session context to population activity. -->
+        <svg viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="encoding-stimulus-clip">
+              <rect x="17" y="42" width="45" height="42" rx="4"/>
+            </clipPath>
+            <pattern id="encoding-gabor-bars" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+              <rect width="8" height="8" fill="#8a8a8a"/>
+              <rect x="0" y="0" width="2.7" height="8" fill="#eeeeee"/>
+              <rect x="4.2" y="0" width="2.4" height="8" fill="#4f4f4f"/>
+            </pattern>
+            <radialGradient id="encoding-gabor-mask-gradient" cx="50%" cy="50%" r="62%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="68%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#000000"/>
+            </radialGradient>
+            <radialGradient id="encoding-gabor-vignette" cx="50%" cy="50%" r="68%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+              <stop offset="62%" stop-color="#ffffff" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#111827" stop-opacity="0.28"/>
+            </radialGradient>
+            <mask id="encoding-gabor-mask">
+              <rect x="17" y="42" width="45" height="42" fill="url(#encoding-gabor-mask-gradient)"/>
+            </mask>
+            <filter id="encoding-gabor-soften" x="-15%" y="-15%" width="130%" height="130%">
+              <feGaussianBlur stdDeviation="0.32"/>
+            </filter>
+            <marker id="encoding-arrow" markerWidth="8" markerHeight="8" refX="6.8" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/>
+            </marker>
+          </defs>
+          <rect x="1" y="1" width="218" height="148" rx="6" fill="#ffffff"/>
 
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/12/github-pages-+-hexo-+-next-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+          <g>
+            <rect x="11" y="34" width="45" height="42" rx="4" fill="#f8fafc" stroke="#d1d5db"/>
+            <rect x="14" y="38" width="45" height="42" rx="4" fill="#eeeeee" stroke="#cbd5e1"/>
+            <rect x="17" y="42" width="45" height="42" rx="4" fill="#8a8a8a" stroke="#94a3b8"/>
+            <g clip-path="url(#encoding-stimulus-clip)">
+              <rect x="17" y="42" width="45" height="42" fill="#828282"/>
+              <g mask="url(#encoding-gabor-mask)" filter="url(#encoding-gabor-soften)">
+                <rect x="2" y="27" width="75" height="72" fill="url(#encoding-gabor-bars)"/>
+              </g>
+              <rect x="17" y="42" width="45" height="42" fill="url(#encoding-gabor-vignette)"/>
+            </g>
+            <rect x="17" y="42" width="45" height="42" rx="4" fill="none" stroke="#64748b" stroke-width="0.9"/>
+          </g>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Hammer-Hamming">
-      <meta itemprop="description" content="">
-    </span>
+          <text x="20" y="111" class="figure-note">context</text>
+          <g transform="translate(18 118)">
+            <circle cx="0" cy="0" r="2.5" fill="#2563eb"/>
+            <circle cx="10" cy="0" r="2.5" fill="#0f766e"/>
+            <circle cx="20" cy="0" r="2.5" fill="#b45309"/>
+            <circle cx="30" cy="0" r="2.5" fill="#64748b"/>
+          </g>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hammer-Hamming's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/12/github-pages-+-hexo-+-next-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">github pages + hexo + next 搭建博客</a>
-        </h2>
+          <g stroke="#64748b" stroke-width="1.2" fill="none" marker-end="url(#encoding-arrow)">
+            <path d="M67 63 C74 63, 79 63, 85 63"/>
+            <path d="M142 63 C149 63, 154 63, 160 63"/>
+          </g>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
+          <g transform="translate(86 34)">
+            <rect x="0" y="0" width="56" height="78" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+            <g fill="#ffffff" stroke="#cbd5e1">
+              <rect x="8" y="9" width="40" height="8" rx="3"/>
+              <rect x="8" y="24" width="40" height="8" rx="3"/>
+              <rect x="8" y="39" width="40" height="8" rx="3"/>
+              <rect x="8" y="54" width="40" height="8" rx="3"/>
+            </g>
+            <g stroke-width="1.2" fill="none" opacity="0.9">
+              <path d="M16 13 H40" stroke="#2563eb"/>
+              <path d="M16 28 H40" stroke="#0f766e"/>
+              <path d="M16 43 H40" stroke="#b45309"/>
+              <path d="M16 58 H40" stroke="#2563eb"/>
+            </g>
+            <g stroke="#94a3b8" stroke-width="0.8" fill="none">
+              <path d="M28 17 V24"/>
+              <path d="M28 32 V39"/>
+              <path d="M28 47 V54"/>
+            </g>
+            <g transform="translate(11 68)">
+              <circle cx="0" cy="0" r="2.5" fill="#2563eb"/>
+              <circle cx="10" cy="0" r="2.5" fill="#0f766e"/>
+              <circle cx="20" cy="0" r="2.5" fill="#b45309"/>
+              <circle cx="30" cy="0" r="2.5" fill="#64748b"/>
+            </g>
+          </g>
 
-              <time title="Created: 2025-04-12 16:18:09 / Modified: 16:26:25" itemprop="dateCreated datePublished" datetime="2025-04-12T16:18:09+08:00">2025-04-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>参考：<a target="_blank" rel="noopener" href="https://mini-pi.github.io/2024/02/28/how-to-make-blog-wedsite/">https://mini-pi.github.io/2024/02/28/how-to-make-blog-wedsite/</a></p>
-<p>其中，npm的安装需要node.js，可以用nvm来安装，方便管理版本。</p>
-<p>若已经安装了hexo、npm和node.js，想卸载：</p>
-<p><a target="_blank" rel="noopener" href="https://baibisen.github.io/2021/01/21/nodejs%E5%AE%89%E8%A3%85%E5%8D%B8%E8%BD%BD%E4%BB%A5%E5%8F%8Ahexo%E8%B8%A9%E5%9D%91/">参考1</a>，<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010496966/article/details/88343939">参考2</a></p>
-
-      
+          <g transform="translate(161 36)">
+            <rect x="0" y="0" width="45" height="74" rx="5" fill="#ffffff" stroke="#94a3b8"/>
+            <g stroke="#e2e8f0" stroke-width="0.8">
+              <line x1="7" y1="13" x2="39" y2="13"/>
+              <line x1="7" y1="26" x2="39" y2="26"/>
+              <line x1="7" y1="39" x2="39" y2="39"/>
+              <line x1="7" y1="52" x2="39" y2="52"/>
+              <line x1="7" y1="65" x2="39" y2="65"/>
+            </g>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13 L10 13 L11 7 L12.5 13 L16 13 L17 9 L18 13 L23 13 L24 6 L25.5 13 L31 13 L32 8 L33.5 13 L39 13" stroke="#0f766e" stroke-width="1.15"/>
+              <path d="M7 26 L12 26 L13 20 L14.5 26 L19 26 L20 18 L21.5 26 L27 26 L28 22 L29.5 26 L35 26 L36 19 L37.5 26 L39 26" stroke="#2563eb" stroke-width="1.15"/>
+              <path d="M7 39 L9 39 L10 34 L11.5 39 L16 39 L17 31 L18.5 39 L24 39 L25 35 L26.5 39 L32 39 L33 32 L34.5 39 L39 39" stroke="#b45309" stroke-width="1.05"/>
+              <path d="M7 52 L11 52 L12 45 L13.5 52 L18 52 L19 48 L20.5 52 L26 52 L27 44 L28.5 52 L34 52 L35 47 L36.5 52 L39 52" stroke="#0f766e" stroke-width="1"/>
+              <path d="M7 65 L13 65 L14 60 L15.5 65 L21 65 L22 57 L23.5 65 L29 65 L30 61 L31.5 65 L37 65 L38 59 L39 65" stroke="#2563eb" stroke-width="1"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="theme-body">
+        <h3>Foundation models for cortical neural encoding</h3>
+        <p>
+          I develop large-scale neural encoding models that predict population activity in the
+          mouse visual cortex across animals, sessions, stimuli, and recording modalities. The
+          objective is generalization: shared representations that transfer to new experimental
+          contexts and remain effective in low-data regimes where session-specific models are
+          underconstrained.
+        </p>
+      </div>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <div class="theme">
+      <div class="theme-figure" aria-hidden="true">
+        <!-- Theme 2: cortical structure as architectural prior -->
+        <svg viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="prior-cortex-clip">
+              <path d="M17 34 C32 25, 54 25, 67 38 L67 124 C49 132, 29 130, 17 120 Z"/>
+            </clipPath>
+            <marker id="prior-arrow" markerWidth="8" markerHeight="8" refX="6.8" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/>
+            </marker>
+          </defs>
+          <rect x="1" y="1" width="218" height="148" rx="6" fill="#ffffff"/>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/12/hello-world/">
+          <g>
+            <g clip-path="url(#prior-cortex-clip)">
+              <rect x="16" y="30" width="54" height="23" fill="#dbeafe"/>
+              <rect x="16" y="53" width="54" height="26" fill="#e0f2fe"/>
+              <rect x="16" y="79" width="54" height="26" fill="#ccfbf1"/>
+              <rect x="16" y="105" width="54" height="28" fill="#fef3c7"/>
+            </g>
+            <path d="M17 34 C32 25, 54 25, 67 38 L67 124 C49 132, 29 130, 17 120 Z" fill="none" stroke="#64748b" stroke-width="0.9"/>
+            <g class="figure-note">
+              <text x="22" y="48">L2/3</text>
+              <text x="22" y="70">L4</text>
+              <text x="22" y="96">L5</text>
+              <text x="22" y="119">L6</text>
+            </g>
+            <g fill="#0f766e" stroke="#ffffff" stroke-width="0.6">
+              <circle cx="47" cy="46" r="3.2"/>
+              <circle cx="54" cy="69" r="3.2"/>
+              <circle cx="43" cy="93" r="3.2"/>
+              <circle cx="56" cy="114" r="3.2"/>
+            </g>
+            <g stroke="#0f766e" stroke-width="1" fill="none" opacity="0.8">
+              <line x1="47" y1="46" x2="54" y2="69"/>
+              <line x1="54" y1="69" x2="43" y2="93"/>
+              <line x1="43" y1="93" x2="56" y2="114"/>
+            </g>
+          </g>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Hammer-Hamming">
-      <meta itemprop="description" content="">
-    </span>
+          <g stroke="#64748b" stroke-width="1.2" fill="none" marker-end="url(#prior-arrow)">
+            <path d="M72 79 C80 79, 84 79, 91 79"/>
+            <path d="M136 79 C144 79, 149 79, 156 79"/>
+          </g>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hammer-Hamming's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/12/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
+          <g transform="translate(90 56)">
+            <rect x="0" y="0" width="48" height="48" rx="4" fill="#ffffff" stroke="#94a3b8"/>
+            <g stroke="#e2e8f0" stroke-width="0.65">
+              <line x1="8" y1="0" x2="8" y2="48"/>
+              <line x1="16" y1="0" x2="16" y2="48"/>
+              <line x1="24" y1="0" x2="24" y2="48"/>
+              <line x1="32" y1="0" x2="32" y2="48"/>
+              <line x1="40" y1="0" x2="40" y2="48"/>
+              <line x1="0" y1="8" x2="48" y2="8"/>
+              <line x1="0" y1="16" x2="48" y2="16"/>
+              <line x1="0" y1="24" x2="48" y2="24"/>
+              <line x1="0" y1="32" x2="48" y2="32"/>
+              <line x1="0" y1="40" x2="48" y2="40"/>
+            </g>
+            <g fill="#0f766e" opacity="0.88">
+              <rect x="0.8" y="0.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="8.8" y="8.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="16.8" y="16.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="24.8" y="24.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="32.8" y="32.8" width="6.4" height="6.4" rx="1"/>
+            </g>
+            <g fill="#2563eb" opacity="0.72">
+              <rect x="24.8" y="8.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="32.8" y="16.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="8.8" y="32.8" width="6.4" height="6.4" rx="1"/>
+            </g>
+            <g fill="#b45309" opacity="0.76">
+              <rect x="40.8" y="24.8" width="6.4" height="6.4" rx="1"/>
+              <rect x="16.8" y="40.8" width="6.4" height="6.4" rx="1"/>
+            </g>
+          </g>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-04-12 15:55:58" itemprop="dateCreated datePublished" datetime="2025-04-12T15:55:58+08:00">2025-04-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+          <g transform="translate(158 38)">
+            <rect x="0" y="0" width="47" height="86" rx="5" fill="#f8fafc" stroke="#94a3b8"/>
+            <g stroke="#cbd5e1" stroke-width="1" fill="none">
+              <path d="M9 17 H39"/>
+              <path d="M9 37 H39"/>
+              <path d="M9 57 H39"/>
+              <path d="M9 77 H39"/>
+              <path d="M14 17 C20 27, 20 27, 14 37"/>
+              <path d="M34 37 C28 47, 28 47, 34 57"/>
+              <path d="M14 57 C20 67, 20 67, 14 77"/>
+            </g>
+            <g stroke="#2563eb" stroke-width="1.4" fill="none">
+              <path d="M9 17 C20 24, 28 29, 39 37"/>
+              <path d="M9 37 C20 45, 28 50, 39 57"/>
+              <path d="M9 57 C20 65, 28 70, 39 77"/>
+            </g>
+            <g fill="#0f766e" stroke="#ffffff" stroke-width="0.7">
+              <circle cx="9" cy="17" r="3.4"/>
+              <circle cx="39" cy="17" r="3.4"/>
+              <circle cx="9" cy="37" r="3.4"/>
+              <circle cx="39" cy="37" r="3.4"/>
+              <circle cx="9" cy="57" r="3.4"/>
+              <circle cx="39" cy="57" r="3.4"/>
+              <circle cx="9" cy="77" r="3.4"/>
+              <circle cx="39" cy="77" r="3.4"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="theme-body">
+        <h3>The brain as a prior for deep models</h3>
+        <p>
+          I study how anatomical and functional organization can be incorporated into deep
+          networks as explicit inductive biases. Rather than treating cortical structure as
+          incidental detail, this direction asks whether constraints derived from biological
+          circuits can improve robustness, neural alignment, and interpretability beyond what
+          unconstrained scaling provides.
+        </p>
+      </div>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <div class="theme">
+      <div class="theme-figure" aria-hidden="true">
+        <!-- Theme 3: in-silico perturbation and probing of circuit mechanisms. -->
+        <svg viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="mechanism-arrow" markerWidth="8" markerHeight="8" refX="6.8" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/>
+            </marker>
+          </defs>
+          <rect x="1" y="1" width="218" height="148" rx="6" fill="#ffffff"/>
 
+          <g transform="translate(15 39)">
+            <rect x="0" y="0" width="52" height="70" rx="5" fill="#f8fafc"/>
+            <svg x="1" y="1" width="50" height="68" viewBox="0 0 50 68" overflow="hidden">
+              <image href="/images/brain.png" x="-3" y="5" width="56" height="56" preserveAspectRatio="xMidYMid meet"/>
+            </svg>
+            <rect x="0" y="0" width="52" height="70" rx="5" fill="none" stroke="#94a3b8"/>
+          </g>
 
-  
+          <g transform="translate(86 34)">
+            <rect x="2" y="2" width="56" height="76" rx="5" fill="#ffffff" stroke="#94a3b8"/>
+            <g stroke="#cbd5e1" stroke-width="1.05" fill="none" stroke-linecap="round">
+              <line x1="13" y1="26" x2="30" y2="16"/>
+              <line x1="30" y1="16" x2="47" y2="27"/>
+              <line x1="13" y1="26" x2="18" y2="48"/>
+              <line x1="18" y1="48" x2="36" y2="42"/>
+              <line x1="36" y1="42" x2="47" y2="27"/>
+              <line x1="30" y1="16" x2="36" y2="42"/>
+              <line x1="18" y1="48" x2="29" y2="63"/>
+              <line x1="29" y1="63" x2="49" y2="58"/>
+              <line x1="36" y1="42" x2="49" y2="58"/>
+              <line x1="47" y1="27" x2="49" y2="58"/>
+            </g>
+            <g stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M13 26 C23 30, 28 35, 36 42" stroke="#0f766e"/>
+              <path d="M30 16 C37 25, 40 33, 36 42" stroke="#2563eb"/>
+              <path d="M18 48 C27 55, 38 58, 49 58" stroke="#b45309"/>
+            </g>
+            <g stroke="#ffffff" stroke-width="0.85">
+              <circle cx="13" cy="26" r="4" fill="#0f766e"/>
+              <circle cx="30" cy="16" r="3.8" fill="#2563eb"/>
+              <circle cx="47" cy="27" r="4" fill="#0f766e"/>
+              <circle cx="18" cy="48" r="4" fill="#2563eb"/>
+              <circle cx="36" cy="42" r="4.5" fill="#b91c1c"/>
+              <circle cx="29" cy="63" r="3.8" fill="#0f766e"/>
+              <circle cx="49" cy="58" r="4" fill="#2563eb"/>
+            </g>
+          </g>
 
+          <g transform="translate(158 38)">
+            <rect x="0" y="0" width="48" height="78" rx="5" fill="#ffffff" stroke="#94a3b8"/>
+            <g stroke="#e2e8f0" stroke-width="0.8">
+              <line x1="8" y1="16" x2="42" y2="16"/>
+              <line x1="8" y1="34" x2="42" y2="34"/>
+              <line x1="8" y1="52" x2="42" y2="52"/>
+            </g>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 16 L12 16 L13 8 L14.5 16 L19 16 L20 11 L21.5 16 L27 16 L28 7 L29.5 16 L36 16 L37 10 L38.5 16 L42 16" stroke="#2563eb" stroke-width="1.25"/>
+              <path d="M8 34 L11 34 L12 29 L13.5 34 L18 34 L19 25 L20.5 34 L26 34 L27 30 L28.5 34 L34 34 L35 27 L36.5 34 L42 34" stroke="#b91c1c" stroke-width="1.25"/>
+              <path d="M8 52 L13 52 L14 45 L15.5 52 L21 52 L22 48 L23.5 52 L29 52 L30 44 L31.5 52 L37 52 L38 47 L39.5 52 L42 52" stroke="#0f766e" stroke-width="1.15"/>
+            </g>
+            <g transform="translate(8 63)">
+              <rect x="0" y="0" width="8" height="8" rx="1.5" fill="#2563eb" opacity="0.84"/>
+              <rect x="13" y="3" width="8" height="5" rx="1.5" fill="#b91c1c" opacity="0.82"/>
+              <rect x="26" y="-4" width="8" height="12" rx="1.5" fill="#0f766e" opacity="0.84"/>
+            </g>
+            <path d="M9 14 V58 H43" stroke="#64748b" stroke-width="0.8" fill="none"/>
+          </g>
 
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
+          <g stroke="#64748b" stroke-width="1.25" fill="none" marker-end="url(#mechanism-arrow)" stroke-linecap="round">
+            <path d="M71 73 H83"/>
+            <path d="M145 73 H155.5"/>
+          </g>
+        </svg>
       </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Hammer-Hamming</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
+      <div class="theme-body">
+        <h3>Mechanistic interpretation of biologically constrained models</h3>
+        <p>
+          Predictive accuracy alone does not constitute a mechanistic explanation. I use
+          biologically constrained encoding models as platforms for probing candidate circuit
+          motifs, perturbing model components, and linking learned representations to hypotheses
+          about cortical computation that can be tested experimentally.
+        </p>
       </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
+    <section class="deferred-section" hidden>
+      <!-- ============================================================
+           NEWS — placeholder, replace with real updates
+           ============================================================ -->
+      <h2>News</h2>
+      <table class="news">
+        <tbody>
+          <tr>
+            <td class="date">May 2026</td>
+            <td>Submitted first first-author manuscript on neural encoding for foundation-scale modelling.</td>
+          </tr>
+          <tr>
+            <td class="date">Apr 2026</td>
+            <td>Passed PhD qualifying exam on connectome-constrained foundation models for visual cortex.</td>
+          </tr>
+          <tr>
+            <td class="date">— —</td>
+            <td>(more updates coming)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ============================================================
+           MANUSCRIPTS — one under review, others in prep at directional level
+           ============================================================ -->
+      <h2>Manuscripts</h2>
+      <div class="publications">
+
+        <div class="pub">
+          <p class="title">A scalable neural encoding model for cross-session generalization</p>
+          <p class="authors"><span class="me" data-personal="name_en">&lt;YOUR NAME&gt;</span>, Coauthor A, Coauthor B</p>
+          <p class="venue">Under review, 2026</p>
+          <p class="badges"><span class="badge review">under review</span></p>
+        </div>
+
+        <div class="pub">
+          <p class="title">Connectome-supervised pretraining for biologically grounded neural encoders</p>
+          <p class="authors"><span class="me" data-personal="name_en">&lt;YOUR NAME&gt;</span>, et al.</p>
+          <p class="venue">Manuscript in preparation, 2026</p>
+          <p class="badges"><span class="badge wip">in prep</span></p>
+        </div>
+
+        <div class="pub">
+          <p class="title">Brain-inspired AI &mdash; <em>in preparation</em></p>
+          <p class="authors"><span class="me" data-personal="name_en">&lt;YOUR NAME&gt;</span>, et al.</p>
+          <p class="venue">Manuscript in preparation, 2026</p>
+          <p class="badges"><span class="badge wip">in prep</span></p>
+        </div>
 
       </div>
-    </main>
+    </section>
 
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
     <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2025</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Hammer-Hamming</span>
-</div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
+      <span>&copy; <span data-personal="copyright_year">2026</span> <span data-personal="name_en">&lt;YOUR NAME&gt;</span></span>
+      <span>Last updated <span data-personal="last_updated">May 2026</span></span>
     </footer>
-  </div>
 
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  </main>
 
-<script src="/js/utils.js"></script>
+  <!-- =============================================================
+       Inject personal info from /personal/info.js into the placeholders.
+       The file at /personal/info.js is private to the human owner of
+       this site; AI assistants are instructed not to read it (see
+       CLAUDE.md at the repo root).
+       ============================================================= -->
+  <script src="/personal/info.js"></script>
+  <script>
+    (function () {
+      var P = window.PERSONAL || {};
 
-<script src="/js/motion.js"></script>
+      // Text-content placeholders.
+      document.querySelectorAll('[data-personal]').forEach(function (el) {
+        var key = el.dataset.personal;
+        var val = P[key];
+        if (typeof val === 'string' && val.length > 0) {
+          el.textContent = val;
+        }
+      });
 
+      // href fields (mailto:).
+      document.querySelectorAll('[data-personal-href]').forEach(function (el) {
+        var key = el.dataset.personalHref;
+        var val = P[key];
+        if (typeof val === 'string' && val.length > 0) {
+          el.setAttribute('href', 'mailto:' + val);
+        }
+      });
 
-<script src="/js/schemes/muse.js"></script>
+      // Hide the Chinese-name span if it's blank.
+      var cn = document.querySelector('.name-cn');
+      if (cn && (!P.name_cn || P.name_cn.length === 0)) {
+        cn.style.display = 'none';
+      }
 
+      // Hide the advisor line if no advisor is provided.
+      var advisorEl = document.querySelector('.advisor [data-personal="advisor"]');
+      if (advisorEl && (!P.advisor || P.advisor.length === 0)) {
+        document.querySelector('.advisor').style.display = 'none';
+      }
 
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+      // Page title.
+      if (P.page_title) {
+        document.title = P.page_title;
+        var ogt = document.querySelector('meta[property="og:title"]');
+        if (ogt) ogt.setAttribute('content', P.page_title);
+      }
+    })();
+  </script>
 
 </body>
 </html>
